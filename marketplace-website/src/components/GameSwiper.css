@@ -1,0 +1,52 @@
+/* Ensure the swiper is at the top of the page */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Swiper container should occupy the top section */
+  .swiper-top {
+    width: 100%;
+    height: 50vh;
+    padding: 20px 0;
+    background-color: #f0f0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Flex properties to center content inside each slide */
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Image styling inside the swiper */
+  .swiper-slide img {
+    margin-top:30px;
+    height: 10%;
+    width: 20%; /* Adjust width for better visibility */
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navigation button color */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #ffffff;
+  }
+  
+  /* Pagination bullet color */
+  .swiper-pagination-bullet {
+    background: #ffffff;
+  }
+  
+  /* Scrollbar drag color */
+  .swiper-scrollbar-drag {
+    background: #ffffff;
+  }
+  

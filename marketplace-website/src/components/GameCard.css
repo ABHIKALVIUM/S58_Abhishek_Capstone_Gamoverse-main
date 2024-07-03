@@ -1,0 +1,90 @@
+.gameCard {
+    /* position: relative; */
+    padding: 25px 20px;
+    margin-bottom: 10px;
+    /* margin-left:100px ; */
+    width: calc(33.333% - 40px); 
+    height: 600px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background: var(--bgColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    float: left;
+    margin-left: 40px; /* Spacing between cards */
+  }
+  
+  .gameCard img {
+    border-radius: 20px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    object-position: center;
+    height: 50%;
+    width: 100%;
+  }
+  
+  .gameCard .like {
+    /* position: absolute; */
+    /* top: calc(50% + 20px);  */
+    margin-left: 20px; /* Align it with some space from the right edge */
+    width: 40px;
+    height: 10  0px;
+    background: var(--bgColor);
+    padding: 5px;
+    border-radius: 0 0 0 20px;
+    color: #ffffff;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    transition: 0.3s;
+  }
+  
+  .gameCard .like .active {
+    color: var(--second);
+  }
+  
+  .gameCard span {
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .gameCard .gameFeature {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px; /* Add some space above the game features */
+  }
+  
+  .gameCard .gameTitle {
+    color: #ffffff;
+    margin-top: 10px;
+    font-family: 'Bouhas 93';
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .gameCard .addBag {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #ffffff;
+    background: var(--second);
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0 20px 0;
+    font-size: 1.2rem;
+    transition: 0.3s;
+  }
+  
+  .gameCard .addBag:hover {
+    background: var(--primary);
+  }
+  

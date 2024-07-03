@@ -1,0 +1,80 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Adjust height as needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adjust padding as needed */
+    z-index: 1000; /* Ensure header is on top */
+}
+
+.menu {
+    margin-left: 300px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.userItems {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.userItems .icon {
+    position: relative;
+    color: #ffffff;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.userItems .icon .like,
+.userItems .icon .bag {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    height: 20px;
+    width: 20px;
+    padding: 3px;
+    color: #ffffff;
+    background: var(--second);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userItems .avatar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.userItems .avatar .user {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.userItems .avatar .user span {
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+.userItems .avatar .user a {
+    color: #ffffff;
+    font-size: 0.6rem;
+    text-decoration: none;
+}

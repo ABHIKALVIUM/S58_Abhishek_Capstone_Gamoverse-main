@@ -1,0 +1,27 @@
+[{
+    "sr_no": 1,
+    "name": "GTA 5",
+    "discount_percentage": 15,
+    "img_link": "https://m.media-amazon.com/images/I/51MFu2e82VL._AC_UF1000,1000_QL80_.jpg",
+    "description":"Grand Theft Auto V: Premium Edition offers a rich open-world experience, including the full story, Grand Theft Auto Online, and the Criminal Enterprise Starter Pack for an immersive criminal empire-building adventure.",
+    "Epic":"https://store.epicgames.com/en-US/p/grand-theft-auto-v",
+    "Steam":"https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/"
+},
+{
+    "sr_no": 2,
+    "name": "SIFU",
+    "discount_percentage": 20,
+    "img_link": "https://cdn1.epicgames.com/offer/b7b42e2078524ab386a8b2a9856ef557/EGS_SIFUStandardEdition_Sloclap_S4_1200x1600-32aca69d756abfcc25f8581942a6162b_1200x1600-32aca69d756abfcc25f8581942a6162b",
+    "description":"Sifu immerses players in gripping Kung Fu battles and cinematic revenge plots. With precise combat mechanics, it delivers a visceral experience, blending action-packed gameplay with a captivating narrative.",
+    "Epic":"https://store.epicgames.com/en-US/p/sifu",
+    "Steam":"https://store.steampowered.com/app/2138710/Sifu/"
+},
+{
+    "sr_no": 3,
+    "name": "Sherlock Holmes Chapter One",
+    "discount_percentage": 10,
+    "img_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrirSGfVGkp5bDRxCE3p0-5deLGTxfq_KtZQ5ggNhxeg&s",
+    "description":"Rocket League combines fast-paced soccer gameplay with vehicular chaos. With intuitive controls and physics-based mechanics, dive into thrilling competition. Master aerial maneuvers, teamwork, and strategy for exhilarating matches in this unique sports experience.",
+    "Epic":"https://store.epicgames.com/en-US/p/sherlock-holmes-chapter-one",
+    "Steam":"https://store.steampowered.com/app/1137300/Sherlock_Holmes_Chapter_One/"
+}]
