@@ -1,90 +1,154 @@
 .gameCard {
-    /* position: relative; */
-    padding: 25px 20px;
-    margin-bottom: 10px;
-    /* margin-left:100px ; */
-    width: calc(33.333% - 40px); 
-    height: 600px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    background: var(--bgColor);
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the content horizontally */
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
-    float: left;
-    margin-left: 40px; /* Spacing between cards */
-  }
-  
-  .gameCard img {
-    border-radius: 20px;
-    margin-bottom: 15px;
-    object-fit: cover;
-    object-position: center;
-    height: 50%;
-    width: 100%;
-  }
-  
-  .gameCard .like {
-    /* position: absolute; */
-    /* top: calc(50% + 20px);  */
-    margin-left: 20px; /* Align it with some space from the right edge */
-    width: 40px;
-    height: 10  0px;
-    background: var(--bgColor);
-    padding: 5px;
-    border-radius: 0 0 0 20px;
-    color: #ffffff;
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    transition: 0.3s;
-  }
-  
-  .gameCard .like .active {
-    color: var(--second);
-  }
-  
-  .gameCard span {
-    color: #ffffff;
-    text-align: center;
-  }
-  
-  .gameCard .gameFeature {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 10px; /* Add some space above the game features */
-  }
-  
-  .gameCard .gameTitle {
-    color: #ffffff;
-    margin-top: 10px;
-    font-family: 'Bouhas 93';
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .gameCard .addBag {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    color: #ffffff;
-    background: var(--second);
-    padding: 10px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px 0 20px 0;
-    font-size: 1.2rem;
-    transition: 0.3s;
-  }
-  
-  .gameCard .addBag:hover {
-    background: var(--primary);
-  }
-  
+  padding: 25px 20px;
+  margin-bottom: 10px;
+  width: calc(33.333% - 40px);
+  height: 600px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background: var(--bgColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 40px;
+}
+
+.gameCard img {
+  border-radius: 20px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  object-position: center;
+  height: 50%;
+  width: 100%;
+}
+
+.gameCard .like {
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  background: var(--bgColor);
+  padding: 5px;
+  border-radius: 0 0 0 20px;
+  color: #ffffff;
+  display: flex;
+  transition: 0.3s;
+}
+
+.gameCard .like .active {
+  color: var(--second);
+}
+
+.gameCard span {
+  color: #ffffff;
+  text-align: center;
+}
+
+.gameCard .gameFeature {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.gameCard .gameTitle {
+  color: #ffffff;
+  margin-top: 10px;
+  font-family: "Bouhas 93";
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.gameCard .addBag {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #ffffff;
+  background: var(--second);
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 0 20px 0;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.gameCard .addBag:hover {
+  background: var(--primary);
+}
+
+.buyButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.buyButton:hover {
+  background-color: var(--second);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: #000;
+  padding: 30px;
+  border-radius: 10px;
+  width: 600px;
+  max-width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.modalGameName {
+  margin-bottom: 20px;
+}
+
+.modalDescription {
+  margin-bottom: 20px;
+}
+
+.links a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.links a:hover {
+  background-color: var(--second);
+}
